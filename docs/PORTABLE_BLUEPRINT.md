@@ -38,8 +38,11 @@ A reusable starting framework for building smaller-scale, single-program applica
 
 ## 📂 Structure (Example)
 /frontend → UI code (Angular/React)
+
 /backend → API + business logic
+
 /docs → Diagrams, API contracts, decisions
+
 
 ---
 
