@@ -42,25 +42,12 @@ It can be adapted for:
 ---
 
 ## 4. Generic Diagram
+User
+ └─> Frontend Layer (UI)
+        └─> Backend Layer (Business Logic)
+               └─> Database Layer (Persistent Storage)
+        └─> Shared Libraries & Utilities (used by both FE & BE)
 
-```mermaid
-flowchart TD
-    subgraph User
-        UI[Web / Mobile Interface]
-    end
-
-    subgraph Monolith[Monolithic Application]
-        FE[Frontend Layer]
-        BE[Backend Layer]
-        DB[Database Layer]
-        SH[Shared Libraries & Utilities]
-    end
-
-    UI --> FE
-    FE --> BE
-    BE --> DB
-    FE --> SH
-    BE --> SH
 ## 5. Recommended DevOps Workflow
 Version Control — Git repository with branching strategy (main, dev, feature/*).
 
