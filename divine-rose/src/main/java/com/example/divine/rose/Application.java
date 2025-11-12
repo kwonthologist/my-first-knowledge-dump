@@ -10,8 +10,10 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-		
-		
+	}
+	
+	
+	public static void readInputSimple() {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Who goes there?:");
@@ -19,7 +21,5 @@ public class Application {
 
 		sc.close();
 		System.out.println("Hello " + name + " welcome to divine roose");
-		
 	}
-
 }
